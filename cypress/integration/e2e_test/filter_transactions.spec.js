@@ -21,20 +21,14 @@ describe('filter transactions  test', () => {
     })
 
     it('should display results', () => {
-        it('should display results', () => {
-            cy.get('#filtered_transactions_for_account').should('be.visible')
+        cy.get('#filtered_transactions_for_account').should('be.visible')
         //now we shold verify the nimber of table rows 'tr' in table body 'tbody'
         //should be in terms of length be greater than zero
         //and it syntax is - its('lenth').shouldd('be.gt', 0)
         //syntax is like this
-            cy.get('tbody > tr')
-                .its('length')
-                .should('be.gt', 0)
-        })
-        
-        cy.get('tbody > tr').its('length').should('be.gt', 0)  
-        
-      
+        cy.get('tbody > tr')
+            .its('length')
+            .should('be.gt', 0)
     })    
     
 })
